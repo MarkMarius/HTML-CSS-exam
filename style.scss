@@ -1,0 +1,75 @@
+body {
+    background-color: #eee;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 5px rgb(196, 195, 195);
+    font-family: 'Inter', sans-serif;
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+
+    button {
+        background: url('menu-icon.png') center / 2rem no-repeat;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+    }
+}
+
+.info {
+background: url('graphic.svg') top 5px right -175px no-repeat;
+background-size: 23rem;
+height: 50vh;
+min-width: 200px;
+padding: 0 2rem;
+padding-top: 4rem;
+
+    h4 {
+        color: rgb(212, 56, 116);
+        font-size: 0.8rem;
+        letter-spacing: 0.15rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        font-weight: 900;
+
+    }
+
+    p {
+        color: #444;
+        line-height: 1.5;
+        padding-bottom: 1rem;
+    }
+
+    button {
+        border: 0.2rem solid transparent;
+        border-image: linear-gradient(45deg, red , rgb(228, 171, 49));
+        border-image-slice: 1;
+        width: 9rem;
+        height: 3rem;
+    }
+}
+
+.offer {
+    background: url('background.svg') no-repeat;
+    background-size: cover;
+    background-position: left -1rem bottom -1rem;
+    height: 20vh;
+    padding: 2rem;
+    padding-top: 7rem;
+
+    h1{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
