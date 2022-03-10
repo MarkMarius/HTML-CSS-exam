@@ -73,3 +73,44 @@ padding-top: 4rem;
         line-height: 1.5;
     }
 }
+
+.logos {
+    padding: 2rem;
+    padding-top: 3rem;
+    height: 12vh;
+    display: grid;
+    grid-template-columns:145px 50px;
+    grid-template-rows: 50px 50px;
+    gap: 0.8rem 0.8rem;
+    grid-template-areas:
+    "img-2 img-1"
+    "img-3 img-5";
+}
+
+.logos .img-1 {
+    width: 11rem;
+    display: flex;
+    grid-area: img-1;
+}
+
+.logos .img-2 {
+    background-color: white;
+    display: flex;
+    grid-area: img-2;
+    width: 7rem;
+
+}
+
+.logos .img-3 {
+    display: flex;
+    grid-area: img-3;
+    width: 6rem;
+}
+
+.logos .img-5 {
+    display: flex;
+    grid-area: img-5;
+    width: 8rem;
+}
+
+
