@@ -41,6 +41,7 @@ padding-top: 4rem;
 
     p {
         color: #444;
+        font-size: 1.1rem;
         line-height: 1.5;
         padding-bottom: 1rem;
     }
@@ -49,6 +50,7 @@ padding-top: 4rem;
         border: 0.2rem solid transparent;
         border-image: linear-gradient(45deg, red , rgb(228, 171, 49));
         border-image-slice: 1;
+        font-size: 600;
         width: 9rem;
         height: 3rem;
     }
@@ -131,10 +133,7 @@ padding-top: 4rem;
         line-height: 1.5;
         margin: 0;
     }
-
 }
-
-
 
 .nfts {
     padding: 1rem;
@@ -146,5 +145,43 @@ padding-top: 4rem;
         }     
 }
 
+.info-2 {
+    background: url('upsell-footer-image.svg') top 140px right -30px no-repeat;
+    background-size: 12rem;
+    height: 60vh;
+    min-width: 200px;
+    padding: 0 2rem;
+    padding-top: 4rem;
+    
+        h4 {
+            color: rgb(212, 56, 116);
+            font-size: 0.85rem;
+            letter-spacing: 0.15rem;
+            margin-bottom: 0;
+        }
+    
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-top: 1rem;
+    
+        }
+    
+        p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            padding-bottom: 1rem;
+        }
+    
+        button {
+            border: 0.2rem solid transparent;
+            border-image: linear-gradient(45deg, red , rgb(228, 171, 49));
+            border-image-slice: 1;
+            font-size: 600;
+            width: 9rem;
+            height: 3rem;
+        }
+    }
 
 
