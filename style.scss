@@ -142,7 +142,7 @@ padding-top: 4rem;
 
         img {
             margin-left: 1rem;
-        }     
+        }
 }
 
 .info-2 {
@@ -184,4 +184,66 @@ padding-top: 4rem;
         }
     }
 
+footer {
+    
+        .logo-img {
+        padding-top: 4rem;
+        padding-left: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        padding-left: 2rem;
+    }
+
+    div {
+        padding-left: 2rem;
+    }
+
+    div .logo-1 , .logo-2 , .logo-3 , .logo-4 {
+        height: 1.3rem;
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    table {
+        padding: 2rem;
+
+        th {
+            color: #555;
+            font-weight: 700;
+            text-align: left;
+            padding: 2rem 6rem 1.5rem 0;
+        }
+
+        td {
+            padding-bottom: 0.7rem;
+        }
+
+        td a {
+            font-weight: 400;
+            text-decoration: none;
+            color: #555;
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .end {
+        height: 12vh;
+
+        aside {
+            color: #666;
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+    
+   
 
