@@ -309,8 +309,27 @@ footer {
         max-width: 1200px;
         padding: 2rem;
     }
-}
+  
+    .header .display-none {
+        display: none;
+    }
 
+    header .menu-2 {
+        display: inline;
+        text-align: right;
+        
+        a {
+            padding-right: 1rem;
+            text-decoration: none;
+            color: #444;
+        }
+
+        a:last-child {
+            padding-right: 0;
+            color: rgb(212, 56, 116);
+        }
+    }
+}
 
     
    
