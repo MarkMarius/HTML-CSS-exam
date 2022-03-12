@@ -11,21 +11,29 @@ header .header {
     justify-content: space-between;
     padding: 2rem 2rem 0 2rem;
 
-    button {
+    .display-none {
         background: url('menu-icon.png') center / 2rem no-repeat;
         width: 2rem;
         height: 2rem;
         border: none;
-    }
+    } 
+}
+
+header .menu-2 {
+ display: none;
 }
 
 .info {
-background: url('graphic.svg') top 5px right -175px no-repeat;
-background-size: 23rem;
-height: 50vh;
-min-width: 200px;
-padding: 0 2rem;
-padding-top: 4rem;
+    background: url('graphic.svg') top 5px right -175px no-repeat; 
+    background-size: 23rem; 
+    height: 50vh; 
+    min-width: 200px; 
+    padding: 0 2rem; 
+    padding-top: 4rem;
+
+    div {
+        max-width: 250px;
+    }
 
     h4 {
         color: rgb(212, 56, 116);
@@ -51,6 +59,7 @@ padding-top: 4rem;
         border-image: linear-gradient(45deg, red , rgb(228, 171, 49));
         border-image-slice: 1;
         font-size: 600;
+        font-weight: bold;
         width: 9rem;
         height: 3rem;
     }
@@ -111,11 +120,18 @@ padding-top: 4rem;
         width: 6rem;
     }
 
+    .logos .img-4 {
+        display: none;
+        grid-area: img-4;
+        width: 10rem;
+    }
+
     .logos .img-5 {
         display: flex;
         grid-area: img-5;
         width: 8rem;
     }
+
 
     h1, p {
         padding: 2rem;
@@ -136,6 +152,7 @@ padding-top: 4rem;
 }
 
 .nfts {
+    display: flex;
     padding: 1rem;
     overflow: auto;
     white-space: nowrap;
@@ -143,6 +160,48 @@ padding-top: 4rem;
         img {
             margin-left: 1rem;
         }
+
+        table {
+            margin-left: 1rem;
+            width: 95%;
+            background-color: rgb(206, 203, 203);
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding: 1rem;
+
+            .orange-color {
+                color: orange;
+                font-size: 0.7rem;
+                text-align: left;
+                padding-bottom: 0.5rem;
+            }
+
+            .small-letters {
+                font-size: 0.7rem;
+                color: #666;
+                padding-bottom: 0.5rem;
+            }
+
+            .small-letters, .td-1:last-child, td:last-child {
+                text-align: right;
+            }
+
+            .td-1 {
+                font-weight: bold;
+                padding-bottom: 0.5rem;
+            }
+
+            td {
+                color: #666;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .eth {
+            position: relative;
+            top: -4.8rem;
+            right: 7.8rem;
+        }       
 }
 
 .info-2 {
@@ -179,6 +238,7 @@ padding-top: 4rem;
             border-image: linear-gradient(45deg, red , rgb(228, 171, 49));
             border-image-slice: 1;
             font-size: 600;
+            font-weight: bold;
             width: 9rem;
             height: 3rem;
         }
@@ -240,6 +300,14 @@ footer {
             font-weight: 400;
             font-size: 1.1rem;
         }
+    }
+}
+
+@media screen and (min-width: 1199px) {
+
+    body {
+        max-width: 1200px;
+        padding: 2rem;
     }
 }
 
