@@ -178,6 +178,7 @@ header .menu-2 {
 
             .small-letters {
                 font-size: 0.7rem;
+                font-weight: 600;
                 color: #666;
                 padding-bottom: 0.5rem;
             }
@@ -364,6 +365,27 @@ footer {
         height: 14vh;
         padding-top: 6rem;
         }
+
+    .nfts {
+        display: flex;
+        overflow: visible;
+        white-space: normal;
+            
+        table {
+             width: 87%;
+        }
+
+    }
+
+    .nfts .nfts-smaller img {
+            height: 15.3rem;
+            padding-right: 1.4rem;
+    }
+
+    .nfts .nfts-smaller .eth {
+            height: 1.3rem;
+            right: 9.3rem;
+    }
 }  
 
 
