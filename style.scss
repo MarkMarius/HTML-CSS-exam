@@ -90,9 +90,9 @@ header .menu-2 {
     .logos {
         padding: 2rem;
         padding-top: 3rem;
-        height: 12vh;
+        height: 13vh;
         display: grid;
-        grid-template-columns:145px 50px;
+        grid-template-columns:145px 90px;
         grid-template-rows: 50px 50px;
         gap: 0.8rem 0.8rem;
         grid-template-areas:
@@ -352,6 +352,18 @@ footer {
         height: 13vh;
         padding-left: 3.5rem;
     }
+
+    .companies .logos .img-4 {
+            display: flex;
+    }
+
+    .companies .logos {
+        grid-template-areas:
+        "img-1 img-2 img-3 img-4 img-5";
+        justify-content: space-between;
+        height: 14vh;
+        padding-top: 6rem;
+        }
 }  
 
 
