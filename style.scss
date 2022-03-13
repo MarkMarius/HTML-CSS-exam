@@ -1,5 +1,5 @@
 body {
-    background-color: #eee;
+    background-color: #fff;
     border: 1px solid rgb(216, 216, 216);
     border-radius: 0.5rem;
     box-shadow: 0px 2px 5px rgb(196, 195, 195);
@@ -164,7 +164,7 @@ header .menu-2 {
         table {
             margin-left: 1rem;
             width: 95%;
-            background-color: rgb(206, 203, 203);
+            background-color: #EEEEEE;
             border-bottom-left-radius: 1rem;
             border-bottom-right-radius: 1rem;
             padding: 1rem;
@@ -203,6 +203,10 @@ header .menu-2 {
             top: -4.8rem;
             right: 7.8rem;
         }       
+}
+
+.nfts-smaller div {
+    height: 277px;
 }
 
 .info-2 {
@@ -297,11 +301,27 @@ footer {
         }
     }
 
+    .footer-flex {
+        padding-left: 0;
+    }
+
+    .leftside-footer {
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    .desktop-table {
+        display: none;
+    }
+
     .end {
         height: 12vh;
 
+        div {
+            display: none;
+        }
+
         aside {
-            color: #666;
+            color: rgb(155, 154, 154);
             font-weight: 400;
             font-size: 1.1rem;
         }
@@ -311,8 +331,9 @@ footer {
 @media screen and (min-width: 1200px) {
 
     body {
-        max-width: 1200px;
+        max-width: 1201px;
         padding: 2rem;
+        margin: 0 auto;
     }
   
     .header .display-none {
@@ -381,6 +402,10 @@ footer {
 
     }
 
+    .nfts-smaller div {
+        height: 244px;
+    }
+
     .nfts .nfts-smaller img {
             height: 15.3rem;
             padding-right: 1.4rem;
@@ -403,6 +428,61 @@ footer {
                 padding-top: 1rem;
             }
         }
+    }
+
+    footer table {
+        display: none;
+    }
+
+    footer .desktop-table {
+        display: flex;
+        padding: 2rem 0rem 0rem 4rem;
+    }
+
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .leftside-footer {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .leftside-footer .logo-img {
+        padding-top: 3rem;
+    }
+
+    .leftside-footer img {
+        padding-left: 0;
+    }
+
+    .leftside-footer p {
+        padding-left: 0;
+    }
+
+    .leftside-footer div {
+        padding-left: 0;
+    }
+
+    footer .end {
+        height: 16vh;
+    }
+
+    footer .end div {
+        display: flex;
+        padding-right: 2rem;
+        color: rgb(155, 154, 154);
+        font-weight: 400;
+        font-size: 1.1rem;
+
+    }
+
+    footer .end {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 1.5rem;
     }
 }
 
