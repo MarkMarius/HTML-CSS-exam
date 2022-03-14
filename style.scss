@@ -1,8 +1,8 @@
 body {
-    background-color: #eee;
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 0.5rem;
-    box-shadow: 0px 2px 5px rgb(196, 195, 195);
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgb(180, 179, 179);
     font-family: 'Inter', sans-serif;
 }
 
@@ -13,14 +13,14 @@ header .header {
 
     .display-none {
         background: url('menu-icon.png') center / 2rem no-repeat;
-        width: 2rem;
-        height: 2rem;
         border: none;
-    } 
+        height: 2rem;
+        width: 2rem;
+    }   
 }
 
 header .menu-2 {
- display: none;
+    display: none;
 }
 
 .info {
@@ -60,8 +60,8 @@ header .menu-2 {
         border-image-slice: 1;
         font-size: 600;
         font-weight: bold;
-        width: 9rem;
         height: 4rem;
+        width: 9rem;
     }
 }
 
@@ -88,50 +88,48 @@ header .menu-2 {
 .companies {
     
     .logos {
+        display: grid;
+        height: 13vh;
+        gap: 0.8rem 0.8rem;
         padding: 2rem;
         padding-top: 3rem;
-        height: 13vh;
-        display: grid;
         grid-template-columns:145px 90px;
         grid-template-rows: 50px 50px;
-        gap: 0.8rem 0.8rem;
         grid-template-areas:
         "img-2 img-1"
         "img-3 img-5";
-}
 
-    .logos .img-1 {
-        width: 11rem;
-        display: flex;
-        grid-area: img-1;
+        .img-1 {
+            display: flex;
+            grid-area: img-1;
+            width: 11rem;
+        }
+
+        .img-2 {
+            background-color: white;
+            display: flex;
+            grid-area: img-2;
+            width: 7rem;
+        }
+
+        .img-3 {
+            display: flex;
+            grid-area: img-3;
+            width: 6rem;
+        }
+
+        .img-4 {
+            display: none;
+            grid-area: img-4;
+            width: 10rem;
+        }
+
+        .img-5 {
+            display: flex;
+            grid-area: img-5;
+            width: 8rem;
+        }
     }
-
-    .logos .img-2 {
-        background-color: white;
-        display: flex;
-        grid-area: img-2;
-        width: 7rem;
-
-    }
-
-    .logos .img-3 {
-        display: flex;
-        grid-area: img-3;
-        width: 6rem;
-    }
-
-    .logos .img-4 {
-        display: none;
-        grid-area: img-4;
-        width: 10rem;
-    }
-
-    .logos .img-5 {
-        display: flex;
-        grid-area: img-5;
-        width: 8rem;
-    }
-
 
     h1, p {
         padding: 2rem;
@@ -157,52 +155,56 @@ header .menu-2 {
     overflow: auto;
     white-space: nowrap;
 
-        img {
-            margin-left: 1rem;
+    img {
+         margin-left: 1rem;
+    }
+
+    table {
+        background-color: #EEEEEE;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        width: 95%;
+
+        .orange-color {
+            color: orange;
+            font-size: 0.7rem;
+            padding-bottom: 0.5rem;
+            text-align: left;
         }
 
-        table {
-            margin-left: 1rem;
-            width: 95%;
-            background-color: rgb(206, 203, 203);
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-            padding: 1rem;
-
-            .orange-color {
-                color: orange;
-                font-size: 0.7rem;
-                text-align: left;
-                padding-bottom: 0.5rem;
-            }
-
-            .small-letters {
-                font-size: 0.7rem;
-                font-weight: 600;
-                color: #666;
-                padding-bottom: 0.5rem;
-            }
-
-            .small-letters, .td-1:last-child, td:last-child {
-                text-align: right;
-            }
-
-            .td-1 {
-                font-weight: bold;
-                padding-bottom: 0.5rem;
-            }
-
-            td {
-                color: #666;
-                padding-bottom: 0.5rem;
-            }
+        .small-letters {
+            color: #666;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding-bottom: 0.5rem;
         }
 
-        .eth {
-            position: relative;
-            top: -4.8rem;
-            right: 7.8rem;
-        }       
+        .small-letters, .td-1:last-child, td:last-child {
+            text-align: right;
+        }
+
+        .td-1 {
+            font-weight: bold;
+            padding-bottom: 0.5rem;
+        }
+
+        td {
+            color: #666;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .eth {
+        position: relative;
+        top: -4.8rem;
+        right: 7.8rem;
+    }       
+}
+
+.nfts-smaller div {
+    height: 277px;
 }
 
 .info-2 {
@@ -244,14 +246,13 @@ header .menu-2 {
             border-image-slice: 1;
             font-size: 600;
             font-weight: bold;
-            width: 9rem;
             height: 4rem;
+            width: 9rem;
         }
     }
 
-footer {
-    
-        .logo-img {
+footer {  
+    .logo-img {
         padding-top: 4rem;
         padding-left: 2rem;
     }
@@ -278,8 +279,8 @@ footer {
         th {
             color: #555;
             font-weight: 700;
-            text-align: left;
             padding: 2rem 6rem 1.5rem 0;
+            text-align: left;
         }
 
         td {
@@ -287,21 +288,33 @@ footer {
         }
 
         td a {
+            color: #555;
             font-weight: 400;
             text-decoration: none;
-            color: #555;
-
-            a:hover {
-                text-decoration: underline;
-            }
         }
+    }
+
+    .footer-flex {
+        padding-left: 0;
+    }
+
+    .leftside-footer {
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    .desktop-table {
+        display: none;
     }
 
     .end {
         height: 12vh;
 
+        div {
+            display: none;
+        }
+
         aside {
-            color: #666;
+            color: rgb(155, 154, 154);
             font-weight: 400;
             font-size: 1.1rem;
         }
@@ -311,7 +324,8 @@ footer {
 @media screen and (min-width: 1200px) {
 
     body {
-        max-width: 1200px;
+        margin: 0 auto;
+        max-width: 1201px;
         padding: 2rem;
     }
   
@@ -324,14 +338,14 @@ footer {
         text-align: right;
         
         a {
+            color: #444;
             padding-right: 1rem;
             text-decoration: none;
-            color: #444;
         }
 
         a:last-child {
-            padding-right: 0;
             color: rgb(212, 56, 116);
+            padding-right: 0;
         }
     }
 
@@ -353,20 +367,20 @@ footer {
     .offer {
         background-position: center;
         border-radius: 1rem;
-        margin: 0 2rem;
         height: 13vh;
+        margin: 0 2rem;
         padding-left: 3.5rem;
     }
 
     .companies .logos .img-4 {
-            display: flex;
+        display: flex;
     }
 
     .companies .logos {
+        height: 14vh;
         grid-template-areas:
         "img-1 img-2 img-3 img-4 img-5";
         justify-content: space-between;
-        height: 14vh;
         padding-top: 6rem;
         }
 
@@ -379,6 +393,10 @@ footer {
              width: 87%;
         }
 
+    }
+
+    .nfts-smaller div {
+        height: 244px;
     }
 
     .nfts .nfts-smaller img {
@@ -402,6 +420,57 @@ footer {
             h1 {
                 padding-top: 1rem;
             }
+        }
+    }
+
+    footer table {
+        display: none;
+    }
+
+    footer .desktop-table {
+        display: flex;
+        padding: 2rem 0rem 0rem 4rem;
+    }
+
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .leftside-footer {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .leftside-footer .logo-img {
+        padding-top: 3rem;
+    }
+
+    .leftside-footer img {
+        padding-left: 0;
+    }
+
+    .leftside-footer p {
+        padding-left: 0;
+    }
+
+    .leftside-footer div {
+        padding-left: 0;
+    }
+
+    footer .end {
+        align-items: flex-end;
+        display: flex;
+        height: 16vh;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+
+        div {
+            color: rgb(155, 154, 154);
+            display: flex;
+            font-weight: 400;
+            font-size: 1.1rem;
+            padding-right: 2rem;
         }
     }
 }
