@@ -1,9 +1,9 @@
 body {
   background-color: #fff;
-  border: 1px solid #d8d8d8;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0px 2px 5px #c4c3c3;
-          box-shadow: 0px 2px 5px #c4c3c3;
+  border: 1px solid #dddddd;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 15px #b4b3b3;
+          box-shadow: 0px 5px 15px #b4b3b3;
   font-family: 'Inter', sans-serif;
 }
 
@@ -19,9 +19,9 @@ header .header {
 
 header .header .display-none {
   background: url("menu-icon.png") center/2rem no-repeat;
-  width: 2rem;
-  height: 2rem;
   border: none;
+  height: 2rem;
+  width: 2rem;
 }
 
 header .menu-2 {
@@ -66,8 +66,8 @@ header .menu-2 {
   border-image-slice: 1;
   font-size: 600;
   font-weight: bold;
-  width: 9rem;
   height: 4rem;
+  width: 9rem;
 }
 
 .offer {
@@ -91,27 +91,27 @@ header .menu-2 {
 }
 
 .companies .logos {
-  padding: 2rem;
-  padding-top: 3rem;
-  height: 13vh;
   display: -ms-grid;
   display: grid;
+  height: 13vh;
+  gap: 0.8rem 0.8rem;
+  padding: 2rem;
+  padding-top: 3rem;
   -ms-grid-columns: 145px 90px;
       grid-template-columns: 145px 90px;
   -ms-grid-rows: 50px 50px;
       grid-template-rows: 50px 50px;
-  gap: 0.8rem 0.8rem;
       grid-template-areas: "img-2 img-1" "img-3 img-5";
 }
 
 .companies .logos .img-1 {
-  width: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: img-1;
+  width: 11rem;
 }
 
 .companies .logos .img-2 {
@@ -182,25 +182,25 @@ header .menu-2 {
 }
 
 .nfts table {
-  margin-left: 1rem;
-  width: 95%;
   background-color: #EEEEEE;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  margin-left: 1rem;
   padding: 1rem;
+  width: 95%;
 }
 
 .nfts table .orange-color {
   color: orange;
   font-size: 0.7rem;
-  text-align: left;
   padding-bottom: 0.5rem;
+  text-align: left;
 }
 
 .nfts table .small-letters {
+  color: #666;
   font-size: 0.7rem;
   font-weight: 600;
-  color: #666;
   padding-bottom: 0.5rem;
 }
 
@@ -268,8 +268,8 @@ header .menu-2 {
   border-image-slice: 1;
   font-size: 600;
   font-weight: bold;
-  width: 9rem;
   height: 4rem;
+  width: 9rem;
 }
 
 footer .logo-img {
@@ -300,8 +300,8 @@ footer table {
 footer table th {
   color: #555;
   font-weight: 700;
-  text-align: left;
   padding: 2rem 6rem 1.5rem 0;
+  text-align: left;
 }
 
 footer table td {
@@ -309,13 +309,9 @@ footer table td {
 }
 
 footer table td a {
+  color: #555;
   font-weight: 400;
   text-decoration: none;
-  color: #555;
-}
-
-footer table td a a:hover {
-  text-decoration: underline;
 }
 
 footer .footer-flex {
@@ -346,9 +342,9 @@ footer .end aside {
 
 @media screen and (min-width: 1200px) {
   body {
+    margin: 0 auto;
     max-width: 1201px;
     padding: 2rem;
-    margin: 0 auto;
   }
   .header .display-none {
     display: none;
@@ -358,13 +354,13 @@ footer .end aside {
     text-align: right;
   }
   header .menu-2 a {
+    color: #444;
     padding-right: 1rem;
     text-decoration: none;
-    color: #444;
   }
   header .menu-2 a:last-child {
-    padding-right: 0;
     color: #d43874;
+    padding-right: 0;
   }
   .info {
     background-size: 37rem;
@@ -381,8 +377,8 @@ footer .end aside {
   .offer {
     background-position: center;
     border-radius: 1rem;
-    margin: 0 2rem;
     height: 13vh;
+    margin: 0 2rem;
     padding-left: 3.5rem;
   }
   .companies .logos .img-4 {
@@ -391,11 +387,11 @@ footer .end aside {
     display: flex;
   }
   .companies .logos {
+    height: 14vh;
         grid-template-areas: "img-1 img-2 img-3 img-4 img-5";
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 14vh;
     padding-top: 6rem;
   }
   .nfts {
@@ -464,28 +460,26 @@ footer .end aside {
     padding-left: 0;
   }
   footer .end {
-    height: 16vh;
-  }
-  footer .end div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-right: 2rem;
-    color: #9b9a9a;
-    font-weight: 400;
-    font-size: 1.1rem;
-  }
-  footer .end {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 16vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 1.5rem;
+  }
+  footer .end div {
+    color: #9b9a9a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-right: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
